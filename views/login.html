@@ -1,0 +1,35 @@
+<header>
+			<h1 class="text-center">Login Page</h1>
+		</header>
+		<!-- //header -->
+		<!-- form section -->
+			<form>
+					<body><style type="text/css"	> 
+body{
+background-image:url(https://d1pfint8izqszg.cloudfront.net/blog/chat-discussion-platform.jpg);
+background-size:cover;
+background-attachment:fixed;
+}</style>
+			<span style="color:red">{{error.errorMsg}}</span>
+				<div class="row">
+					<div class="agile_full field">
+						<label for="labelEmail">E-mail <span>*</span></label>
+						<input type="text" id="labelEmail" ng-model="user.email" class="form-control" data-field="email">
+						<div class="valid-message"></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="agile_full field">
+						<label for="labelPassword">Password <span>*</span></label>
+						<input type="password" id="labelPassword" ng-model="user.password" class="form-control" data-field="password">
+						<div class="valid-message"></div>
+					</div>
+				</div>				
+				<div class="row">
+					<div class="agile_full field">
+						<button ng-click="login(user)" style="text-color:white">Let Me In</button>
+					</div>
+				</div>
+				</body>
+			</form>
+		</section>
